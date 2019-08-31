@@ -1,1 +1,23 @@
-# CIS554
+# Topics covered
+- Object Oriented Design
+- Encapsulation
+- Overloading and Defaults
+- Array of Objects, pointer to Objects
+- Dynamic allocation and deallocation
+- Memory management
+- Left and Right values
+- Operator Overloading
+- I/O Overloading
+- Recursion
+- Standard Template Library (STL): vector, list, map, queue, stack, deque, set; Iterator
+- Inheritance; Polymorphism
+- Templates and manipulators
+- Exception handling, lambda expressions
+- Functions and function pointer
+- Multi-File program development
+- Move constructor, copy constructor, overloading assignment operator
+- Stream for I/O
+- Thread programming
+- Mutex and various locking and notification mechanisms for synchronization
+- Centralized locking vs distributing locking
+- Regular expressions
