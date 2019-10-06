@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/wch/CLionProjects/CIS554/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,175 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lc10
+
+# Build rule for target.
+lc10: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lc10
+.PHONY : lc10
+
+# fast build rule for target.
+lc10/fast:
+	$(MAKE) -f CMakeFiles/lc10.dir/build.make CMakeFiles/lc10.dir/build
+.PHONY : lc10/fast
+
+#=============================================================================
+# Target rules for targets named lc7
+
+# Build rule for target.
+lc7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lc7
+.PHONY : lc7
+
+# fast build rule for target.
+lc7/fast:
+	$(MAKE) -f CMakeFiles/lc7.dir/build.make CMakeFiles/lc7.dir/build
+.PHONY : lc7/fast
+
+#=============================================================================
+# Target rules for targets named lc1
+
+# Build rule for target.
+lc1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lc1
+.PHONY : lc1
+
+# fast build rule for target.
+lc1/fast:
+	$(MAKE) -f CMakeFiles/lc1.dir/build.make CMakeFiles/lc1.dir/build
+.PHONY : lc1/fast
+
+#=============================================================================
+# Target rules for targets named lc3
+
+# Build rule for target.
+lc3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lc3
+.PHONY : lc3
+
+# fast build rule for target.
+lc3/fast:
+	$(MAKE) -f CMakeFiles/lc3.dir/build.make CMakeFiles/lc3.dir/build
+.PHONY : lc3/fast
+
+#=============================================================================
+# Target rules for targets named lc5
+
+# Build rule for target.
+lc5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lc5
+.PHONY : lc5
+
+# fast build rule for target.
+lc5/fast:
+	$(MAKE) -f CMakeFiles/lc5.dir/build.make CMakeFiles/lc5.dir/build
+.PHONY : lc5/fast
+
+#=============================================================================
+# Target rules for targets named hw1
+
+# Build rule for target.
+hw1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hw1
+.PHONY : hw1
+
+# fast build rule for target.
+hw1/fast:
+	$(MAKE) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/build
+.PHONY : hw1/fast
+
+#=============================================================================
+# Target rules for targets named hw3
+
+# Build rule for target.
+hw3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hw3
+.PHONY : hw3
+
+# fast build rule for target.
+hw3/fast:
+	$(MAKE) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/build
+.PHONY : hw3/fast
+
+#=============================================================================
+# Target rules for targets named lc8
+
+# Build rule for target.
+lc8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lc8
+.PHONY : lc8
+
+# fast build rule for target.
+lc8/fast:
+	$(MAKE) -f CMakeFiles/lc8.dir/build.make CMakeFiles/lc8.dir/build
+.PHONY : lc8/fast
+
+#=============================================================================
+# Target rules for targets named lc4
+
+# Build rule for target.
+lc4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lc4
+.PHONY : lc4
+
+# fast build rule for target.
+lc4/fast:
+	$(MAKE) -f CMakeFiles/lc4.dir/build.make CMakeFiles/lc4.dir/build
+.PHONY : lc4/fast
+
+#=============================================================================
+# Target rules for targets named hw4
+
+# Build rule for target.
+hw4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hw4
+.PHONY : hw4
+
+# fast build rule for target.
+hw4/fast:
+	$(MAKE) -f CMakeFiles/hw4.dir/build.make CMakeFiles/hw4.dir/build
+.PHONY : hw4/fast
+
+#=============================================================================
+# Target rules for targets named hw2
+
+# Build rule for target.
+hw2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hw2
+.PHONY : hw2
+
+# fast build rule for target.
+hw2/fast:
+	$(MAKE) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/build
+.PHONY : hw2/fast
+
+#=============================================================================
+# Target rules for targets named lc2
+
+# Build rule for target.
+lc2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lc2
+.PHONY : lc2
+
+# fast build rule for target.
+lc2/fast:
+	$(MAKE) -f CMakeFiles/lc2.dir/build.make CMakeFiles/lc2.dir/build
+.PHONY : lc2/fast
+
+#=============================================================================
+# Target rules for targets named lc9
+
+# Build rule for target.
+lc9: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lc9
+.PHONY : lc9
+
+# fast build rule for target.
+lc9/fast:
+	$(MAKE) -f CMakeFiles/lc9.dir/build.make CMakeFiles/lc9.dir/build
+.PHONY : lc9/fast
+
+#=============================================================================
 # Target rules for targets named CIS554
 
 # Build rule for target.
@@ -122,6 +291,114 @@ CIS554: cmake_check_build_system
 CIS554/fast:
 	$(MAKE) -f CMakeFiles/CIS554.dir/build.make CMakeFiles/CIS554.dir/build
 .PHONY : CIS554/fast
+
+19Fall_HW1.o: 19Fall_HW1.cpp.o
+
+.PHONY : 19Fall_HW1.o
+
+# target to build an object file
+19Fall_HW1.cpp.o:
+	$(MAKE) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/19Fall_HW1.cpp.o
+.PHONY : 19Fall_HW1.cpp.o
+
+19Fall_HW1.i: 19Fall_HW1.cpp.i
+
+.PHONY : 19Fall_HW1.i
+
+# target to preprocess a source file
+19Fall_HW1.cpp.i:
+	$(MAKE) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/19Fall_HW1.cpp.i
+.PHONY : 19Fall_HW1.cpp.i
+
+19Fall_HW1.s: 19Fall_HW1.cpp.s
+
+.PHONY : 19Fall_HW1.s
+
+# target to generate assembly for a file
+19Fall_HW1.cpp.s:
+	$(MAKE) -f CMakeFiles/hw1.dir/build.make CMakeFiles/hw1.dir/19Fall_HW1.cpp.s
+.PHONY : 19Fall_HW1.cpp.s
+
+19Fall_HW2.o: 19Fall_HW2.cpp.o
+
+.PHONY : 19Fall_HW2.o
+
+# target to build an object file
+19Fall_HW2.cpp.o:
+	$(MAKE) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/19Fall_HW2.cpp.o
+.PHONY : 19Fall_HW2.cpp.o
+
+19Fall_HW2.i: 19Fall_HW2.cpp.i
+
+.PHONY : 19Fall_HW2.i
+
+# target to preprocess a source file
+19Fall_HW2.cpp.i:
+	$(MAKE) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/19Fall_HW2.cpp.i
+.PHONY : 19Fall_HW2.cpp.i
+
+19Fall_HW2.s: 19Fall_HW2.cpp.s
+
+.PHONY : 19Fall_HW2.s
+
+# target to generate assembly for a file
+19Fall_HW2.cpp.s:
+	$(MAKE) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/19Fall_HW2.cpp.s
+.PHONY : 19Fall_HW2.cpp.s
+
+19Fall_HW3.o: 19Fall_HW3.cpp.o
+
+.PHONY : 19Fall_HW3.o
+
+# target to build an object file
+19Fall_HW3.cpp.o:
+	$(MAKE) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/19Fall_HW3.cpp.o
+.PHONY : 19Fall_HW3.cpp.o
+
+19Fall_HW3.i: 19Fall_HW3.cpp.i
+
+.PHONY : 19Fall_HW3.i
+
+# target to preprocess a source file
+19Fall_HW3.cpp.i:
+	$(MAKE) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/19Fall_HW3.cpp.i
+.PHONY : 19Fall_HW3.cpp.i
+
+19Fall_HW3.s: 19Fall_HW3.cpp.s
+
+.PHONY : 19Fall_HW3.s
+
+# target to generate assembly for a file
+19Fall_HW3.cpp.s:
+	$(MAKE) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/19Fall_HW3.cpp.s
+.PHONY : 19Fall_HW3.cpp.s
+
+19Fall_HW4.o: 19Fall_HW4.cpp.o
+
+.PHONY : 19Fall_HW4.o
+
+# target to build an object file
+19Fall_HW4.cpp.o:
+	$(MAKE) -f CMakeFiles/hw4.dir/build.make CMakeFiles/hw4.dir/19Fall_HW4.cpp.o
+.PHONY : 19Fall_HW4.cpp.o
+
+19Fall_HW4.i: 19Fall_HW4.cpp.i
+
+.PHONY : 19Fall_HW4.i
+
+# target to preprocess a source file
+19Fall_HW4.cpp.i:
+	$(MAKE) -f CMakeFiles/hw4.dir/build.make CMakeFiles/hw4.dir/19Fall_HW4.cpp.i
+.PHONY : 19Fall_HW4.cpp.i
+
+19Fall_HW4.s: 19Fall_HW4.cpp.s
+
+.PHONY : 19Fall_HW4.s
+
+# target to generate assembly for a file
+19Fall_HW4.cpp.s:
+	$(MAKE) -f CMakeFiles/hw4.dir/build.make CMakeFiles/hw4.dir/19Fall_HW4.cpp.s
+.PHONY : 19Fall_HW4.cpp.s
 
 19spring_HW1.o: 19spring_HW1.cpp.o
 
@@ -156,7 +433,7 @@ Lecture_1.o: Lecture_1.cpp.o
 
 # target to build an object file
 Lecture_1.cpp.o:
-	$(MAKE) -f CMakeFiles/CIS554.dir/build.make CMakeFiles/CIS554.dir/Lecture_1.cpp.o
+	$(MAKE) -f CMakeFiles/lc1.dir/build.make CMakeFiles/lc1.dir/Lecture_1.cpp.o
 .PHONY : Lecture_1.cpp.o
 
 Lecture_1.i: Lecture_1.cpp.i
@@ -165,7 +442,7 @@ Lecture_1.i: Lecture_1.cpp.i
 
 # target to preprocess a source file
 Lecture_1.cpp.i:
-	$(MAKE) -f CMakeFiles/CIS554.dir/build.make CMakeFiles/CIS554.dir/Lecture_1.cpp.i
+	$(MAKE) -f CMakeFiles/lc1.dir/build.make CMakeFiles/lc1.dir/Lecture_1.cpp.i
 .PHONY : Lecture_1.cpp.i
 
 Lecture_1.s: Lecture_1.cpp.s
@@ -174,8 +451,35 @@ Lecture_1.s: Lecture_1.cpp.s
 
 # target to generate assembly for a file
 Lecture_1.cpp.s:
-	$(MAKE) -f CMakeFiles/CIS554.dir/build.make CMakeFiles/CIS554.dir/Lecture_1.cpp.s
+	$(MAKE) -f CMakeFiles/lc1.dir/build.make CMakeFiles/lc1.dir/Lecture_1.cpp.s
 .PHONY : Lecture_1.cpp.s
+
+Lecture_10.o: Lecture_10.cpp.o
+
+.PHONY : Lecture_10.o
+
+# target to build an object file
+Lecture_10.cpp.o:
+	$(MAKE) -f CMakeFiles/lc10.dir/build.make CMakeFiles/lc10.dir/Lecture_10.cpp.o
+.PHONY : Lecture_10.cpp.o
+
+Lecture_10.i: Lecture_10.cpp.i
+
+.PHONY : Lecture_10.i
+
+# target to preprocess a source file
+Lecture_10.cpp.i:
+	$(MAKE) -f CMakeFiles/lc10.dir/build.make CMakeFiles/lc10.dir/Lecture_10.cpp.i
+.PHONY : Lecture_10.cpp.i
+
+Lecture_10.s: Lecture_10.cpp.s
+
+.PHONY : Lecture_10.s
+
+# target to generate assembly for a file
+Lecture_10.cpp.s:
+	$(MAKE) -f CMakeFiles/lc10.dir/build.make CMakeFiles/lc10.dir/Lecture_10.cpp.s
+.PHONY : Lecture_10.cpp.s
 
 Lecture_2.o: Lecture_2.cpp.o
 
@@ -183,7 +487,7 @@ Lecture_2.o: Lecture_2.cpp.o
 
 # target to build an object file
 Lecture_2.cpp.o:
-	$(MAKE) -f CMakeFiles/CIS554.dir/build.make CMakeFiles/CIS554.dir/Lecture_2.cpp.o
+	$(MAKE) -f CMakeFiles/lc2.dir/build.make CMakeFiles/lc2.dir/Lecture_2.cpp.o
 .PHONY : Lecture_2.cpp.o
 
 Lecture_2.i: Lecture_2.cpp.i
@@ -192,7 +496,7 @@ Lecture_2.i: Lecture_2.cpp.i
 
 # target to preprocess a source file
 Lecture_2.cpp.i:
-	$(MAKE) -f CMakeFiles/CIS554.dir/build.make CMakeFiles/CIS554.dir/Lecture_2.cpp.i
+	$(MAKE) -f CMakeFiles/lc2.dir/build.make CMakeFiles/lc2.dir/Lecture_2.cpp.i
 .PHONY : Lecture_2.cpp.i
 
 Lecture_2.s: Lecture_2.cpp.s
@@ -201,8 +505,170 @@ Lecture_2.s: Lecture_2.cpp.s
 
 # target to generate assembly for a file
 Lecture_2.cpp.s:
-	$(MAKE) -f CMakeFiles/CIS554.dir/build.make CMakeFiles/CIS554.dir/Lecture_2.cpp.s
+	$(MAKE) -f CMakeFiles/lc2.dir/build.make CMakeFiles/lc2.dir/Lecture_2.cpp.s
 .PHONY : Lecture_2.cpp.s
+
+Lecture_3.o: Lecture_3.cpp.o
+
+.PHONY : Lecture_3.o
+
+# target to build an object file
+Lecture_3.cpp.o:
+	$(MAKE) -f CMakeFiles/lc3.dir/build.make CMakeFiles/lc3.dir/Lecture_3.cpp.o
+.PHONY : Lecture_3.cpp.o
+
+Lecture_3.i: Lecture_3.cpp.i
+
+.PHONY : Lecture_3.i
+
+# target to preprocess a source file
+Lecture_3.cpp.i:
+	$(MAKE) -f CMakeFiles/lc3.dir/build.make CMakeFiles/lc3.dir/Lecture_3.cpp.i
+.PHONY : Lecture_3.cpp.i
+
+Lecture_3.s: Lecture_3.cpp.s
+
+.PHONY : Lecture_3.s
+
+# target to generate assembly for a file
+Lecture_3.cpp.s:
+	$(MAKE) -f CMakeFiles/lc3.dir/build.make CMakeFiles/lc3.dir/Lecture_3.cpp.s
+.PHONY : Lecture_3.cpp.s
+
+Lecture_4.o: Lecture_4.cpp.o
+
+.PHONY : Lecture_4.o
+
+# target to build an object file
+Lecture_4.cpp.o:
+	$(MAKE) -f CMakeFiles/lc4.dir/build.make CMakeFiles/lc4.dir/Lecture_4.cpp.o
+.PHONY : Lecture_4.cpp.o
+
+Lecture_4.i: Lecture_4.cpp.i
+
+.PHONY : Lecture_4.i
+
+# target to preprocess a source file
+Lecture_4.cpp.i:
+	$(MAKE) -f CMakeFiles/lc4.dir/build.make CMakeFiles/lc4.dir/Lecture_4.cpp.i
+.PHONY : Lecture_4.cpp.i
+
+Lecture_4.s: Lecture_4.cpp.s
+
+.PHONY : Lecture_4.s
+
+# target to generate assembly for a file
+Lecture_4.cpp.s:
+	$(MAKE) -f CMakeFiles/lc4.dir/build.make CMakeFiles/lc4.dir/Lecture_4.cpp.s
+.PHONY : Lecture_4.cpp.s
+
+Lecture_5.o: Lecture_5.cpp.o
+
+.PHONY : Lecture_5.o
+
+# target to build an object file
+Lecture_5.cpp.o:
+	$(MAKE) -f CMakeFiles/lc5.dir/build.make CMakeFiles/lc5.dir/Lecture_5.cpp.o
+.PHONY : Lecture_5.cpp.o
+
+Lecture_5.i: Lecture_5.cpp.i
+
+.PHONY : Lecture_5.i
+
+# target to preprocess a source file
+Lecture_5.cpp.i:
+	$(MAKE) -f CMakeFiles/lc5.dir/build.make CMakeFiles/lc5.dir/Lecture_5.cpp.i
+.PHONY : Lecture_5.cpp.i
+
+Lecture_5.s: Lecture_5.cpp.s
+
+.PHONY : Lecture_5.s
+
+# target to generate assembly for a file
+Lecture_5.cpp.s:
+	$(MAKE) -f CMakeFiles/lc5.dir/build.make CMakeFiles/lc5.dir/Lecture_5.cpp.s
+.PHONY : Lecture_5.cpp.s
+
+Lecture_7.o: Lecture_7.cpp.o
+
+.PHONY : Lecture_7.o
+
+# target to build an object file
+Lecture_7.cpp.o:
+	$(MAKE) -f CMakeFiles/lc7.dir/build.make CMakeFiles/lc7.dir/Lecture_7.cpp.o
+.PHONY : Lecture_7.cpp.o
+
+Lecture_7.i: Lecture_7.cpp.i
+
+.PHONY : Lecture_7.i
+
+# target to preprocess a source file
+Lecture_7.cpp.i:
+	$(MAKE) -f CMakeFiles/lc7.dir/build.make CMakeFiles/lc7.dir/Lecture_7.cpp.i
+.PHONY : Lecture_7.cpp.i
+
+Lecture_7.s: Lecture_7.cpp.s
+
+.PHONY : Lecture_7.s
+
+# target to generate assembly for a file
+Lecture_7.cpp.s:
+	$(MAKE) -f CMakeFiles/lc7.dir/build.make CMakeFiles/lc7.dir/Lecture_7.cpp.s
+.PHONY : Lecture_7.cpp.s
+
+Lecture_8.o: Lecture_8.cpp.o
+
+.PHONY : Lecture_8.o
+
+# target to build an object file
+Lecture_8.cpp.o:
+	$(MAKE) -f CMakeFiles/lc8.dir/build.make CMakeFiles/lc8.dir/Lecture_8.cpp.o
+.PHONY : Lecture_8.cpp.o
+
+Lecture_8.i: Lecture_8.cpp.i
+
+.PHONY : Lecture_8.i
+
+# target to preprocess a source file
+Lecture_8.cpp.i:
+	$(MAKE) -f CMakeFiles/lc8.dir/build.make CMakeFiles/lc8.dir/Lecture_8.cpp.i
+.PHONY : Lecture_8.cpp.i
+
+Lecture_8.s: Lecture_8.cpp.s
+
+.PHONY : Lecture_8.s
+
+# target to generate assembly for a file
+Lecture_8.cpp.s:
+	$(MAKE) -f CMakeFiles/lc8.dir/build.make CMakeFiles/lc8.dir/Lecture_8.cpp.s
+.PHONY : Lecture_8.cpp.s
+
+Lecture_9.o: Lecture_9.cpp.o
+
+.PHONY : Lecture_9.o
+
+# target to build an object file
+Lecture_9.cpp.o:
+	$(MAKE) -f CMakeFiles/lc9.dir/build.make CMakeFiles/lc9.dir/Lecture_9.cpp.o
+.PHONY : Lecture_9.cpp.o
+
+Lecture_9.i: Lecture_9.cpp.i
+
+.PHONY : Lecture_9.i
+
+# target to preprocess a source file
+Lecture_9.cpp.i:
+	$(MAKE) -f CMakeFiles/lc9.dir/build.make CMakeFiles/lc9.dir/Lecture_9.cpp.i
+.PHONY : Lecture_9.cpp.i
+
+Lecture_9.s: Lecture_9.cpp.s
+
+.PHONY : Lecture_9.s
+
+# target to generate assembly for a file
+Lecture_9.cpp.s:
+	$(MAKE) -f CMakeFiles/lc9.dir/build.make CMakeFiles/lc9.dir/Lecture_9.cpp.s
+.PHONY : Lecture_9.cpp.s
 
 main.o: main.cpp.o
 
@@ -237,18 +703,64 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... lc10"
+	@echo "... rebuild_cache"
+	@echo "... lc7"
+	@echo "... lc1"
+	@echo "... lc3"
+	@echo "... lc5"
+	@echo "... hw1"
+	@echo "... hw3"
+	@echo "... lc8"
+	@echo "... lc4"
+	@echo "... hw4"
+	@echo "... hw2"
+	@echo "... lc2"
+	@echo "... lc9"
 	@echo "... CIS554"
+	@echo "... 19Fall_HW1.o"
+	@echo "... 19Fall_HW1.i"
+	@echo "... 19Fall_HW1.s"
+	@echo "... 19Fall_HW2.o"
+	@echo "... 19Fall_HW2.i"
+	@echo "... 19Fall_HW2.s"
+	@echo "... 19Fall_HW3.o"
+	@echo "... 19Fall_HW3.i"
+	@echo "... 19Fall_HW3.s"
+	@echo "... 19Fall_HW4.o"
+	@echo "... 19Fall_HW4.i"
+	@echo "... 19Fall_HW4.s"
 	@echo "... 19spring_HW1.o"
 	@echo "... 19spring_HW1.i"
 	@echo "... 19spring_HW1.s"
 	@echo "... Lecture_1.o"
 	@echo "... Lecture_1.i"
 	@echo "... Lecture_1.s"
+	@echo "... Lecture_10.o"
+	@echo "... Lecture_10.i"
+	@echo "... Lecture_10.s"
 	@echo "... Lecture_2.o"
 	@echo "... Lecture_2.i"
 	@echo "... Lecture_2.s"
+	@echo "... Lecture_3.o"
+	@echo "... Lecture_3.i"
+	@echo "... Lecture_3.s"
+	@echo "... Lecture_4.o"
+	@echo "... Lecture_4.i"
+	@echo "... Lecture_4.s"
+	@echo "... Lecture_5.o"
+	@echo "... Lecture_5.i"
+	@echo "... Lecture_5.s"
+	@echo "... Lecture_7.o"
+	@echo "... Lecture_7.i"
+	@echo "... Lecture_7.s"
+	@echo "... Lecture_8.o"
+	@echo "... Lecture_8.i"
+	@echo "... Lecture_8.s"
+	@echo "... Lecture_9.o"
+	@echo "... Lecture_9.i"
+	@echo "... Lecture_9.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

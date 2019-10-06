@@ -17,6 +17,58 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc10">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc10"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc10/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc10/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
 				<Option type="4"/>
@@ -27,11 +79,505 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="lc7">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc7" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc7"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc7/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc7/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc1">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc1/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc3">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc3/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc5">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc5"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc5/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc5/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw1">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/hw1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw1/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/hw1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw3">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/hw3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw3/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/hw3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc8">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc8"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc8/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc8/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc4">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc4"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc4/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc4/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw4">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/hw4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw4"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw4/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/hw4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw4/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw2">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/hw2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw2/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/hw2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 hw2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc2">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc2/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc9">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc9" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc9"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lc9/fast">
+				<Option output="/Users/wch/CLionProjects/CIS554/cmake-build-debug/lc9" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wch/CLionProjects/CIS554/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 lc9/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wch/CLionProjects/CIS554/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -80,13 +626,46 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/wch/CLionProjects/CIS554/19spring_HW1.cpp">
-			<Option target="CIS554"/>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/19Fall_HW1.cpp">
+			<Option target="hw1"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/19Fall_HW2.cpp">
+			<Option target="hw2"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/19Fall_HW3.cpp">
+			<Option target="hw3"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/19Fall_HW4.cpp">
+			<Option target="hw4"/>
 		</Unit>
 		<Unit filename="/Users/wch/CLionProjects/CIS554/Lecture_1.cpp">
-			<Option target="CIS554"/>
+			<Option target="lc1"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/Lecture_10.cpp">
+			<Option target="lc10"/>
 		</Unit>
 		<Unit filename="/Users/wch/CLionProjects/CIS554/Lecture_2.cpp">
+			<Option target="lc2"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/Lecture_3.cpp">
+			<Option target="lc3"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/Lecture_4.cpp">
+			<Option target="lc4"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/Lecture_5.cpp">
+			<Option target="lc5"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/Lecture_7.cpp">
+			<Option target="lc7"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/Lecture_8.cpp">
+			<Option target="lc8"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/Lecture_9.cpp">
+			<Option target="lc9"/>
+		</Unit>
+		<Unit filename="/Users/wch/CLionProjects/CIS554/cmake-build-debug/19spring_HW1.cpp">
 			<Option target="CIS554"/>
 		</Unit>
 		<Unit filename="/Users/wch/CLionProjects/CIS554/main.cpp">

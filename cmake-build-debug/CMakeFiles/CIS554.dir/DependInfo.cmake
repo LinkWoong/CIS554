@@ -4,9 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/wch/CLionProjects/CIS554/19spring_HW1.cpp" "/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/CIS554.dir/19spring_HW1.cpp.o"
-  "/Users/wch/CLionProjects/CIS554/Lecture_1.cpp" "/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/CIS554.dir/Lecture_1.cpp.o"
-  "/Users/wch/CLionProjects/CIS554/Lecture_2.cpp" "/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/CIS554.dir/Lecture_2.cpp.o"
+  "/Users/wch/CLionProjects/CIS554/cmake-build-debug/19spring_HW1.cpp" "/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/CIS554.dir/19spring_HW1.cpp.o"
   "/Users/wch/CLionProjects/CIS554/main.cpp" "/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/CIS554.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

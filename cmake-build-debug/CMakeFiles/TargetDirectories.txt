@@ -1,3 +1,16 @@
-/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/lc10.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/lc7.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/lc1.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/lc3.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/lc5.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/hw1.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/hw3.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/lc8.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/lc4.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/hw4.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/hw2.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/lc2.dir
+/Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/lc9.dir
 /Users/wch/CLionProjects/CIS554/cmake-build-debug/CMakeFiles/CIS554.dir
