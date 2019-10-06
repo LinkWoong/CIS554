@@ -1,7 +1,3 @@
-//
-// Created by WCH on 2019-09-17.
-//
-
 #include <iostream>
 #include <string>
 #include <map>
@@ -41,7 +37,7 @@ public:
     bool operator==(const ThreeD &t) const { return (ThreeD::getVolume() == t.getVolume()); }
 };
 */
-template <class T> class ThreeD {
+template <typename T> class ThreeD {
 public:
     T height;
     T width;
@@ -56,7 +52,7 @@ public:
         depth = k;
     }
 
-    T getVol() { return height * width * depth; }
+    T getVol();
     T getArea();
 };
 
@@ -64,8 +60,17 @@ template <class T> T ThreeD<T>::getArea() {
     return 2 * (height * width + height * depth + width * depth);
 }
 
+template <class X> X ThreeD<X>::getVol() {
+    return height * width * depth;
+}
+
 template <class X> ostream& operator<<(ostream& str, const ThreeD<X> &t) {
     str << "(" << t.height << ", " << t.width << ", " << t.depth;
+    return str;
+}
+
+template <class X> ostream& operator<<(ostream& str, const map<int, ThreeD<X>> &t) {
+    for (auto i: t) { str << i; }
     return str;
 }
 
