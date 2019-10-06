@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wch/CLionProjects/CIS554/Lecture_6.cpp
+iostream
+-
+vector
+-
+list
+-
+string
+-
+map
+-
+
