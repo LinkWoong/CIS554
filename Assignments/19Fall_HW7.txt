@@ -1,0 +1,257 @@
+//CIS554 HW8   Due: 11:59PM, Friday, Nov. 29.
+//CIS554 HW8 by Chenhui Wang
+//NetID: cwang106 SUID: 334027643
+#include <iostream>
+#include <fstream>
+#include <ctime>
+#include <vector>
+#include <string>
+#include <random>
+
+using namespace std;
+class Battle_Cards {
+public:
+	vector<string> cards;
+	vector<vector<string>*> players;
+	ofstream buf;
+	int dealer = 0;
+	int size = 0;
+
+	// initialize our cards as well as the players
+	// inside this function, player creation, shuffle, dealer selection and cards distribution are implemented
+	void initialize(int k);
+
+	// play the game
+	void play();
+
+private:
+	// swap two strings
+	void swap(string &i, string &j) {
+		string temp = i;
+		i = j;
+		j = temp;
+	}
+};
+
+void Battle_Cards::initialize(int k) {
+	if (k < 2) {
+		cout << "The number of player must be >= 2" << endl;
+		return;
+	}
+	buf.open("data1.txt");
+	size = k;
+	for (int i = 0; i < k; i++) {
+		players.push_back(new vector<string>());
+	}
+
+	// cout << players.size() << endl;
+	// Generate 52 cards
+	vector<string> colors = { "C", "D", "H", "S" };
+	for (auto color : colors) {
+		for (int i = 1; i <= 13; i++) {
+			string current;
+			if (i == 1) { current = "A" + color; }
+			else if (i == 11) { current = "J" + color; }
+			else if (i == 12) { current = "Q" + color; }
+			else if (i == 13) { current = "K" + color; }
+			else { current = to_string(i) + color; }
+			cards.push_back(current);
+		}
+	}
+	buf << "************** initial deck of cards before shuffle **************" << endl;
+	for (auto card : cards) {
+		buf << card << " ";
+	}
+	buf << endl;
+	buf << endl;
+	buf << "************** after shuffle **************" << endl;
+	// shuffle 52 cards
+	srand(time(nullptr));
+	for (int i = 0; i < 52; i++) {
+		int j = rand() % 52;
+		swap(cards[i], cards[j]);
+	}
+
+	for (auto card : cards) {
+		buf << card << " ";
+	}
+	buf << endl;
+	buf << endl;
+
+	// select the dealer
+	dealer = rand() % k;
+	// cout << "The dealer is player " << dealer + 1 << endl;
+	int current_player = (dealer + 1) % k;
+	for (auto card : cards) {
+		players[current_player]->push_back(card);
+		current_player = (current_player + 1) % k;
+	}
+
+	buf << "************** after cards are dealt **************" << endl;
+
+	for (int i = 0; i < k; i++) {
+		buf << "cards for player " << i + 1 << endl;
+		for (auto j = players[i]->begin(); j != players[i]->end(); j++) {
+			buf << *j << " ";
+		}
+		buf << endl;
+	}
+	buf << endl;
+}
+
+void Battle_Cards::play() {
+	bool finished = false;
+	while (!finished) {
+		vector<vector<string>*> current_desk;
+		vector<int> losers;
+		vector<int> dup_winners;
+		for (int i = 0; i < size; i++) {
+			buf << "Hand " << i + 1 << endl;
+			for (auto j = players[i]->begin(); j != players[i]->end(); j++) {
+				buf << *j << " ";
+			}
+			current_desk.push_back(new vector<string>);
+			buf << endl;
+			buf << endl;
+		}
+
+		buf << endl;
+
+		// then select random card from each player
+		for (int i = 0; i < size; i++) {
+			if (players[i]->size() < 5) {
+				continue;
+			}
+			int player_size = players[i]->size();
+			int str_index = rand() % player_size;
+			string current = players[i]->at(str_index);
+			players[i]->erase(players[i]->begin() + str_index);
+			current_desk[i]->push_back(current);
+		}
+
+		// find the smallest
+		int winner = 0;
+		int smallest = 1000;
+		for (int i = 0; i < current_desk.size(); i++) {
+			buf << "Table " << i + 1 << endl;
+			for (auto j = current_desk[i]->begin(); j != current_desk[i]->end(); j++) {
+				buf << *j << " ";
+			}
+			buf << endl;
+		}
+		buf << endl;
+		// find the winner
+		for (int i = 0; i < current_desk.size(); i++) {
+			if (players[i]->size() == 0) { continue; }
+			char array[4];
+			int current_val = 0;
+			strcpy_s(array, current_desk[i]->front().c_str());
+			if (array[0] == 'A') { current_val = 1; }
+			else if (array[0] == 'J') { current_val = 11; }
+			else if (array[0] == 'Q') { current_val = 12; }
+			else if (array[0] == 'K') { current_val = 13; }
+			else { current_val = array[0] - '0'; }
+
+			if (current_val < smallest) {
+				winner = i;
+				smallest = current_val;
+			}
+		}
+
+		// check for tie
+		for (int i = 0; i < current_desk.size(); i++) {
+			if (players[i]->size() == 0) { continue; }
+			char array[4];
+			int current_val = 0;
+			strcpy_s(array, current_desk[i]->front().c_str());
+			if (array[0] == 'A') { current_val = 1; }
+			else if (array[0] == 'J') { current_val = 11; }
+			else if (array[0] == 'Q') { current_val = 12; }
+			else if (array[0] == 'K') { current_val = 13; }
+			else { current_val = array[0] - '0'; }
+
+			if (current_val == smallest) { // tie
+				if (players[i]->size() >= 5) {
+					dup_winners.push_back(i);
+				}
+			}
+		}
+
+		// handling the tie
+		if (dup_winners.size() > 1) {
+			for (int i = 0; i < dup_winners.size(); i++) {
+				for (int j = 0; j < 2; j++) {
+					if (players[i]->size() < 5) { break; }
+					int player_size = players[i]->size();
+					int str_index = rand() % player_size;
+					string current = players[i]->at(str_index);
+					players[i]->erase(players[i]->begin() + str_index);
+					current_desk[i]->push_back(current);
+				}
+			}
+
+			for (int i = 0; i < current_desk.size(); i++) {
+				if (players[i]->size() == 0) { continue; }
+				char array[4];
+				int current_val = 0;
+				strcpy_s(array, current_desk[i]->front().c_str());
+				if (array[0] == 'A') { current_val = 1; }
+				else if (array[0] == 'J') { current_val = 11; }
+				else if (array[0] == 'Q') { current_val = 12; }
+				else if (array[0] == 'K') { current_val = 13; }
+				else { current_val = array[0] - '0'; }
+
+				if (current_val < smallest) {
+					winner = i;
+					smallest = current_val;
+				}
+			}
+		}
+
+
+		// add the cards on the table to the winner
+		for (auto i : current_desk) {
+			for (auto j : *i) {
+				players[winner]->push_back(j);
+			}
+		}
+		// shuffle the winner
+		srand(time(nullptr));
+		for (int i = 0; i < players[winner]->size(); i++) {
+			int j = rand() % players[winner]->size();
+			swap(players[winner]->at(i), players[winner]->at(j));
+		}
+		// then check the status
+		for (int i = 0; i < size; i++) {
+			if (players[i]->size() < 5) {
+				losers.push_back(i);
+				for (auto j = players[i]->begin(); j != players[i]->end(); j++) {
+					players[winner]->push_back(*j);
+				}
+				players[i]->clear();
+			}
+		}
+		if (size - losers.size() <= 1) { // only 1 player left
+			buf << "Game Over!!  The winner is player " << winner + 1 << endl;
+			for (int i = 0; i < size; i++) {
+				buf << "Final Hand " << i + 1 << endl;
+				for (auto j = players[i]->begin(); j != players[i]->end(); j++) {
+					buf << *j << " ";
+				}
+				buf << endl;
+				buf << endl;
+			}
+			finished = true;
+		}
+	}
+	buf.close();
+}
+
+int main() {
+	Battle_Cards game;
+	int size = 0;
+	cin >> size;
+	game.initialize(size);
+	game.play();
+	return 0;
+}
